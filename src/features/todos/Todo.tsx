@@ -97,7 +97,7 @@ export default function Todo() {
             ))}
           </ul>
         ) : (
-          <div>Nothing in todo</div>
+          <div className="todo-placeholder">Nothing in todo</div>
         )}
       </section>
     </div>
