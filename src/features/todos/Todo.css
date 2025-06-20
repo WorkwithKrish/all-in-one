@@ -1,10 +1,9 @@
 .todo{
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 20px;
   padding: 8px;
   flex-direction: column;
+  background-color: azure;
    button{
       height: 25px;
       width:80px
@@ -20,7 +19,8 @@
   .todoList{
     ul{
       list-style: none;
-      min-width: 400px
+      min-width: 400px;
+      padding:0px !important
     }
     li{
       border-bottom: 2px solid black;
