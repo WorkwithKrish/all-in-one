@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./ZigZag.css";
 
 const ZigZagString = () => {
   const [zigzagVal, setZigZagVal] = useState<string>("");
@@ -17,6 +18,7 @@ const ZigZagString = () => {
 
   return (
     <div className="zigzag-wrapper">
+      <h1>Zig Zag String</h1>
       <input
         type="text"
         value={zigzagVal}
@@ -24,10 +26,15 @@ const ZigZagString = () => {
         onChange={(e) => setZigZagVal(e.target.value)}
         placeholder="Enter string like one,two,three"
       />
-      <button type="button" onClick={() => handleZigZag()}>
+      <button className="btn" type="button" onClick={() => handleZigZag()}>
         Submit
       </button>
-      <div>Output: {zigZagOutput}</div>
+      <div
+        className="outputText"
+        style={{ display: zigZagOutput ? "block" : "none" }}
+      >
+        Output: {zigZagOutput}
+      </div>
     </div>
   );
 };

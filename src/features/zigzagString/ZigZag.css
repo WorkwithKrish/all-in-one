@@ -1,0 +1,20 @@
+.zigzag-wrapper{
+     display: flex;
+  margin-top: 20px;
+  padding: 8px;
+  flex-direction: column;
+  background-color: azure;
+  input{
+    padding: 8px;
+    width: 500px;
+}
+.btn{
+    width: 180px;
+    padding: 8px;
+    margin-top:8px ;
+}
+.outputText{
+    margin-top: 8px;
+    font-size: 18px;
+}
+}
