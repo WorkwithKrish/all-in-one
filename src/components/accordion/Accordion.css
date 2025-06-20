@@ -1,0 +1,28 @@
+.accordion-wrapper{
+    display: flex;
+  flex-direction: column;
+  background-color: azure;
+  padding: 8px;
+  margin-top: 20px;
+
+
+ 
+}
+ .accordion-header{
+      
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: gray;
+    color: white;
+    padding: 8px;
+    margin-bottom: 8px;
+               
+  }
+
+.accordion-body{
+    background-color: white;
+    margin-top: -8px;
+    margin-bottom: 8px;
+
+}
