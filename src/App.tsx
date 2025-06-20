@@ -3,7 +3,6 @@ import ChipInputDemo from "./features/chipInput/ChipInputDemo";
 import Todo from "./features/todos/Todo";
 import "./App.css";
 import ZigZagString from "./features/zigzagString/ZigZag";
-import Counter from "./features/counter/Counter";
 
 export default function App() {
   return (
@@ -12,7 +11,6 @@ export default function App() {
       <Todo />
       <ChipInputDemo />
       <ZigZagString />
-      <Counter />
     </div>
   );
 }
