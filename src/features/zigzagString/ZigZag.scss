@@ -1,17 +1,26 @@
+@use "../../utils/styles/variables.scss" as *;
+
 .zigzag-wrapper{
      display: flex;
   margin-top: 20px;
   padding: 8px;
   flex-direction: column;
-  background-color: azure;
+    @include componentStyle;
   input{
     padding: 8px;
     width: 500px;
 }
 .btn{
-    width: 180px;
+    width: 100%;
     padding: 8px;
     margin-top:8px ;
+    height: 40px;
+    background-color: $primaryBtn;
+    cursor: pointer;
+    color: #fff;
+    &:hover{
+        background-color: $primaryBtnHover;
+    }
 }
 .outputText{
     margin-top: 8px;

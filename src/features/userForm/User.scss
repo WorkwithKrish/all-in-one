@@ -1,0 +1,44 @@
+@use "../../utils/styles/variables.scss" as *;
+
+.user-wrapper{
+    margin: 20px 0 0 0;
+    padding: 8px;
+    // min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    @include componentStyle;
+    .input-wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        input{
+            width: 500px;
+            height: 40px;
+            margin: 8px 0 0 0;
+        }
+        textarea{
+            resize: vertical;
+    height: 100px;
+    padding: 8px;
+    margin-top: 8px;
+        }
+        .error{
+        color: red;
+        padding: 0px;
+        margin: 0px;
+        text-transform: capitalize;}
+    }
+    button{
+        width: 97%;
+        height: 40px;
+        margin: 8px;
+        cursor: pointer;
+        background-color: $primaryBtn;
+        color: #fff;
+        &:hover{
+            background-color: $primaryBtnHover
+            ;
+        }
+    }
+}
+

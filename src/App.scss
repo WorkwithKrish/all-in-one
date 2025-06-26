@@ -1,8 +1,12 @@
+@use "./utils/styles/variables.scss" as *;
+
 .App{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: antiquewhite;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
+    color: $primaryColor;
 }

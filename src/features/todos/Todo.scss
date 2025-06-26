@@ -1,0 +1,63 @@
+@use "../../utils/styles/variables.scss" as *;
+
+.todo{
+  display: flex;
+  margin-top: 20px;
+  padding: 8px;
+  flex-direction: column;
+  @include componentStyle;
+
+  input{
+    padding: 8px;
+    width: 400px;
+  }
+   button{
+      height: 40px;
+      width:80px;
+      padding:8px;
+      color: #fff;
+      background-color: $primaryBtn;
+      margin: 0 8px 0 0;
+      &:hover{
+        background-color: $primaryBtnHover;
+      }
+    }
+  .todoForm{
+    input{
+      min-width:200px;
+      height: 20px;
+      margin-right: 8px;
+    }
+  
+  }
+  .todoList{
+    ul{
+      list-style: none;
+      min-width: 400px;
+      padding:0px !important
+    }
+    li{
+      border-bottom: 2px solid $primaryBtnHover;
+      padding: 16px;
+      span{
+        font-size: 24px;
+        text-transform: capitalize;
+        padding: 0 0 8px 0;
+        display: block;
+      }
+      .timer{
+        margin:0 0 8px 0;
+        font-size: 24px;
+        font-weight: 800;
+      }
+    }
+    .todo-placeholder{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 0 0;
+    font-size: 21px;
+    text-transform: capitalize;
+    }
+  }
+}

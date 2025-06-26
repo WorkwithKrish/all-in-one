@@ -1,9 +1,11 @@
+@use "../../utils/styles/variables.scss" as *;
+
 .accordion-wrapper{
     display: flex;
   flex-direction: column;
-  background-color: azure;
   padding: 8px;
   margin-top: 20px;
+    @include componentStyle;
 
 
  
@@ -13,10 +15,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: gray;
+    background: $primaryBtnHover;
     color: white;
     padding: 8px;
     margin-bottom: 8px;
+    cursor: pointer;
+    width:100%;
+    border: none;
                
   }
 

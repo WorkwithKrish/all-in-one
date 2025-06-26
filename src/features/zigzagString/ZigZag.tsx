@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "./ZigZag.css";
+import "./ZigZag.scss";
 
 const ZigZagString = () => {
-  const [zigzagVal, setZigZagVal] = useState<string>("");
+  const [zigzagVal, setZigzagVal] = useState<string>("");
   const [zigZagOutput, setZigZagOutput] = useState<string>("");
   const handleZigZag = () => {
     const inputArray = zigzagVal.split(",");
@@ -23,7 +23,7 @@ const ZigZagString = () => {
         type="text"
         value={zigzagVal}
         aria-label="zigzag-input-box"
-        onChange={(e) => setZigZagVal(e.target.value)}
+        onChange={(e) => setZigzagVal(e.target.value)}
         placeholder="Enter string like one,two,three"
       />
       <button className="btn" type="button" onClick={() => handleZigZag()}>

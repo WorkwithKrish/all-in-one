@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ChipInput.css";
+import "./ChipInput.scss";
 
 export default function App() {
   const [currentValue, setCurrentValue] = useState<string>("");
