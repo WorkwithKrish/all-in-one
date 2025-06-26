@@ -1,0 +1,25 @@
+@use "../../utils/styles/variables.scss" as *;
+.counter-wrapper{
+margin: 20px 0 0 0;
+padding: 8px;
+min-width: 500px;
+display: flex;
+@include componentStyle;
+
+flex-direction: column;}
+.button-Wrapper{
+   display: flex;
+   flex-direction: row;
+   padding: 8px;
+
+   button{
+    color:white;
+background-color: $primaryBtn; 
+min-width: 100px;
+height:40px;
+margin:0 8px 0 0;
+cursor: pointer; }
+button:hover{
+    background-color: $primaryBtnHover;
+}
+}

@@ -1,7 +1,9 @@
+@use "../../utils/styles/variables.scss" as *;
+
 .ChipInput{
   display: flex;
   flex-direction: column;
-  background-color: azure;
+    @include componentStyle;
   padding: 8px;
   margin-top: 20px;
   input {

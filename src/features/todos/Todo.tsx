@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./Todo.css";
+import "./Todo.scss";
 import { mockTodoList } from "../../mocks/TodoMock/todoList.mock";
 import { formatTime } from "../../utils/date/formatDate";
 

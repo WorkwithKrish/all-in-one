@@ -1,0 +1,11 @@
+$componentBackground : transparent;    
+$primaryBtn:#A52F2A;
+$primaryBtnHover:#2A8FA5;
+$primaryColor:black;
+$componentBoxShadow : rgb(194 65 65 / 30%);
+@mixin  componentStyle{
+    border:6px solid $primaryBtnHover;
+    border-radius: 12px;
+     box-shadow: 9px 8px 10px 0 $componentBoxShadow;
+     background-color: transparent;
+}       

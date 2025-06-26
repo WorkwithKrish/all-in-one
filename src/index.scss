@@ -1,0 +1,29 @@
+@use "./utils/styles/variables.scss" as *;
+/* Firefox */
+html, body {
+  scrollbar-width: thin;
+  scrollbar-color: $primaryBtn $primaryBtnHover;
+}
+
+/* WebKit */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: $primaryBtnHover;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background-color: $primaryBtn;
+  border-radius: 10px;
+  border: 2px solid $primaryBtnHover
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: $primaryBtnHover; /* darker brown on hover */
+}
